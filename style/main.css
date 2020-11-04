@@ -2,15 +2,24 @@
 
 body {
     margin: 0;
-    color: rgb(212, 212, 212);
+    color: rgb(116, 113, 113);
     background-color: rgb(55, 56, 54);
+    overflow: hidden;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.floatingElement {
+    position: absolute;
+    border-radius: 5px;
 }
 
 .virtualKey {
-    position: absolute;
     width: 32px;
     height: 32px;
-    border-radius: 5px;
 }
 
 .virtualKey#ArrowUp {
@@ -32,4 +41,17 @@ body {
 .virtualKey#R {
     top: 10px;
     right: 10px;
+}
+
+#editorPanel {
+    background-color: rgba(144, 144, 144, 0.8);
+    padding: 10px;
+    width: 250px;
+    top: 10px;
+    right: 10px;
+}
+
+#editorPanel .list {
+    height: 200px;
+    overflow-y: scroll;
 }
