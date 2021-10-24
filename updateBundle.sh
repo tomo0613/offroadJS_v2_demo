@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "copy bundle from 'offroadJS_v2/bundle/' "
+echo "copy bundle from 'offroadJS_v2/dist/' "
 
-cp -r ./../offroadJS_v2/bundle/ ./
-
-# node ./testServer.js
+cp -r ./../offroadJS_v2/dist/* ./
